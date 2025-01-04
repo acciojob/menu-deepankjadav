@@ -102,7 +102,7 @@ const App = () => {
             <div style={{display:'flex', flexWrap : "wrap"}}>
             
         {filter.map(item => (
-          <div key={item.id} style={{display:"flex", border:"1px solid black", width:"500px"}}>
+          <div data-test-id={"menu-item-" + category} key={item.id} style={{display:"flex", border:"1px solid black", width:"500px"}}>
             <img src={item.img} alt={item.title} />
             <h3>{item.title}</h3>
             <p>{item.desc}</p>
